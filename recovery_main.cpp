@@ -82,7 +82,7 @@ static bool IsExternalSdcard() {
   return chars.find("nosdcard") == std::string::npos;
 }
 
-static std::string get_build_type() {
+std::string get_build_type() {
   return android::base::GetProperty("ro.build.type", "");
 }
 
